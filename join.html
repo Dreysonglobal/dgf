@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Us & Volunteer | Dreyson Global Foundation (DGF)</title>
+  <meta name="description" content="Join Dreyson Global Foundation (DGF) as a member or field volunteer. Donate items or volunteer in Lagos, Nigeria. Contact 09056068122.">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="top-bar-container">
+      <div class="top-bar-info">
+        <span class="top-bar-item">
+          <i class="fas fa-map-marker-alt"></i> CM building, 3rd avenue, Gowon Estate, Lagos, Nigeria
+        </span>
+        <span class="top-bar-item">
+          <i class="fas fa-phone-alt"></i> 09056068122
+        </span>
+      </div>
+      <div class="top-bar-cta">
+        <a href="https://wa.me/2349056068122" target="_blank" class="btn-top-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-badge">DGF</div>
+        <div class="logo-text">
+          <span class="logo-title">DREYSON</span>
+          <span class="logo-sub">GLOBAL FOUNDATION</span>
+        </div>
+      </a>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About DGF</a></li>
+        <li><a href="join.html" class="nav-link active">Join Us</a></li>
+        <li><a href="media.html" class="nav-link">Media & Gallery</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn btn-accent btn-donate">
+          <i class="fas fa-heart"></i> Donate Now
+        </button>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <section class="hero" style="padding: 60px 24px; background: linear-gradient(135deg, rgba(6, 78, 59, 0.95), rgba(9, 30, 23, 0.95)), url('assets/images/hero_ngo_bg.jpg') center/cover no-repeat;">
+    <div class="hero-container" style="display: block; text-align: center; max-width: 800px;">
+      <div class="hero-badge">
+        <i class="fas fa-user-plus"></i> Membership & Volunteer Registration
+      </div>
+      <h1 class="hero-title" style="font-size: 2.75rem;">Join Dreyson Global Foundation</h1>
+      <p class="hero-subtitle" style="margin: 0 auto;">
+        Fill in your details below to become a member, donate items, or volunteer for field work. When you click Send, your application sends directly to our official WhatsApp chat (09056068122).
+      </p>
+    </div>
+  </section>
+
+  <!-- Registration Form Section -->
+  <section class="section">
+    <div class="form-container">
+      <div style="text-align: center; margin-bottom: 36px;">
+        <h2 style="font-family: 'Cinzel', serif; color: var(--primary-dark); font-size: 1.85rem; margin-bottom: 10px;">
+          Prospective Member Application Form
+        </h2>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          We are excited to welcome you into the DGF family!
+        </p>
+      </div>
+
+      <form id="dgfJoinForm">
+        <!-- Personal Info -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName" class="form-label">Full Name <span style="color: red;">*</span></label>
+            <input type="text" id="fullName" class="form-control" placeholder="e.g. Chukwuma Adebayo" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone" class="form-label">Phone / WhatsApp Number <span style="color: red;">*</span></label>
+            <input type="tel" id="phone" class="form-control" placeholder="e.g. 09056068122" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-control" placeholder="e.g. name@example.com">
+          </div>
+
+          <div class="form-group">
+            <label for="location" class="form-label">City & State of Residence</label>
+            <input type="text" id="location" class="form-control" placeholder="e.g. Gowon Estate, Lagos">
+          </div>
+        </div>
+
+        <!-- Question 1: Why join? -->
+        <div class="form-group">
+          <label for="reason" class="form-label">Why do you want to join Dreyson Global Foundation? <span style="color: red;">*</span></label>
+          <textarea id="reason" class="form-control" placeholder="Tell us what motivates you to join DGF and ease sufferings in Nigeria..." required></textarea>
+        </div>
+
+        <!-- Question 2: Donations -->
+        <div class="form-group">
+          <label class="form-label">Do you have items or things to donate to the NGO?</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="hasDonation" value="Yes">
+              <span>Yes, I have items to donate</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="hasDonation" value="No" checked>
+              <span>No, not at the moment</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Dynamic Donation Details Box -->
+        <div class="form-group" id="donationDetailsGroup" style="display: none; background: rgba(245, 158, 11, 0.06); padding: 18px; border-radius: var(--radius-md); border: 1px solid rgba(245, 158, 11, 0.3);">
+          <label for="donationDetails" class="form-label">What items would you like to donate?</label>
+          <textarea id="donationDetails" class="form-control" placeholder="e.g. Clothes, shoes, foodstuffs, medical supplies, educational materials, books, cash gift..."></textarea>
+        </div>
+
+        <!-- Question 3: Volunteer for Field Work -->
+        <div class="form-group">
+          <label class="form-label">Do you want to volunteer for field work & community outreaches?</label>
+          <div class="radio-group">
+            <label class="radio-label">
+              <input type="radio" name="volunteerField" value="Yes" checked>
+              <span>Yes, I want to volunteer in the field</span>
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="volunteerField" value="No">
+              <span>No, advisory or virtual support only</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Dynamic Volunteer Skills Checkboxes -->
+        <div class="form-group" id="volunteerSkillsGroup" style="background: rgba(6, 78, 59, 0.04); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--border-emerald);">
+          <label class="form-label">Select areas you would like to help with during field work:</label>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="fieldSkills" value="Food Relief Distribution">
+              <span>Food & Relief Package Distribution</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="fieldSkills" value="Medical & Health Screening">
+              <span>Medical & Health Screening</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="fieldSkills" value="Logistics & Event Setup">
+              <span>Logistics & Venue Setup</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="fieldSkills" value="Media, Photography & Video">
+              <span>Media, Photography & Video</span>
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="fieldSkills" value="Youth Mentorship & Teaching">
+              <span>Youth Mentorship & Skill Teaching</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div style="text-align: center; margin-top: 36px;">
+          <button type="submit" class="btn btn-whatsapp" style="width: 30%; padding: 16px; font-size: 1.1rem;">
+             Send
+          </button>
+          
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Address Info Banner -->
+  <section class="section" style="background: var(--bg-dark); color: #ffffff; text-align: center;">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h3 style="font-family: 'Cinzel', serif; font-size: 1.75rem; color: var(--accent-gold); margin-bottom: 14px;">
+        Prefer Direct Physical Visit or Call?
+      </h3>
+      <p style="color: #cbd5e1; font-size: 1.05rem; margin-bottom: 24px;">
+        <strong>Address:</strong> CM building, 3rd avenue, Gowon Estate, Lagos, Nigeria.<br>
+        <strong>Direct Phone / WhatsApp:</strong> <a href="tel:09056068122" style="color: var(--accent-gold); text-decoration: underline;">09056068122</a>
+      </p>
+      <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+        <a href="tel:09056068122" class="btn btn-call">
+          <i class="fas fa-phone-alt"></i> Call Now: 09056068122
+        </a>
+        <a href="https://wa.me/2349056068122" target="_blank" class="btn btn-whatsapp">
+          <i class="fab fa-whatsapp"></i> Chat WhatsApp: 09056068122
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="brand-logo" style="margin-bottom: 16px;">
+          <div class="logo-badge">DGF</div>
+          <div class="logo-text">
+            <span class="logo-title">DREYSON</span>
+            <span class="logo-sub" style="color: var(--accent-gold);">GLOBAL FOUNDATION</span>
+          </div>
+        </a>
+        <p class="footer-desc">
+          Founded in 2024 to ease the sufferings of Nigerians through grassroots humanitarian relief, healthcare support, and community empowerment.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About DGF</a></li>
+          <li><a href="join.html">Join Us</a></li>
+          <li><a href="media.html">Media & Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Get Involved</h4>
+        <ul class="footer-links">
+          <li><a href="join.html">Volunteer Field Work</a></li>
+          <li><a href="join.html">Donate Relief Items</a></li>
+          <li><a href="#" class="btn-donate">Financial Support</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Contact & Location</h4>
+        <div class="footer-contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>CM building, 3rd avenue, Gowon Estate, Lagos, Nigeria</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fas fa-phone-alt"></i>
+          <span><a href="tel:09056068122" style="color: inherit;">09056068122</a></span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <span><a href="https://wa.me/2349056068122" target="_blank" style="color: inherit;">WhatsApp: 09056068122</a></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 - 2026 Dreyson Global Foundation (DGF). All Rights Reserved.</p>
+      <p>CM Building, Gowon Estate, Lagos, Nigeria.</p>
+    </div>
+  </footer>
+
+  <!-- Floating Call & WhatsApp Action Buttons -->
+  <div class="floating-actions">
+    <a href="https://wa.me/2349056068122" target="_blank" class="float-btn float-whatsapp" aria-label="WhatsApp Us">
+      <i class="fab fa-whatsapp" style="font-size: 1.75rem;"></i>
+      <span class="float-tooltip">WhatsApp: 09056068122</span>
+    </a>
+    <a href="tel:09056068122" class="float-btn float-call" aria-label="Call Us">
+      <i class="fas fa-phone-alt" style="font-size: 1.5rem;"></i>
+      <span class="float-tooltip">Call: 09056068122</span>
+    </a>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/join-form.js"></script>
+</body>
+</html>
