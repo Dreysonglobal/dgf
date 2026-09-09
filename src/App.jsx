@@ -1,8 +1,20 @@
 import { useEffect, useState } from 'react';
+import logoImage from '../assets/images/logo.PNG';
+import heroImage from '../assets/images/hero_ngo_bg.PNG';
+import communityImage from '../assets/images/about_dgf_community.jpg';
+import foodImage from '../assets/images/media_food_outreach.jpg';
+import medicalImage from '../assets/images/media_medical_care.jpg';
 
 const phone = '09056068122';
 const whatsappNumber = '2349056068122';
-const image = (name) => `/assets/images/${name}`;
+const images = {
+  'logo.PNG': logoImage,
+  'hero_ngo_bg.PNG': heroImage,
+  'about_dgf_community.jpg': communityImage,
+  'media_food_outreach.jpg': foodImage,
+  'media_medical_care.jpg': medicalImage,
+};
+const image = (name) => images[name];
 
 const navItems = [
   { href: '/', label: 'Home' },
