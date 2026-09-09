@@ -738,40 +738,6 @@ button, input, textarea, select {
   box-shadow: var(--shadow-md);
 }
 
-.static-tag {
-  position: static;
-  display: inline-flex;
-  margin-bottom: 12px;
-  background: rgba(225, 29, 72, 0.15);
-  color: #e11d48;
-}
-
-/* YouTube Video Card */
-.video-card {
-  background: var(--bg-card);
-  border-radius: var(--radius-md);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  border: 1px solid var(--border-light);
-}
-
-.video-embed-container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-  height: 0;
-  overflow: hidden;
-  background: #000000;
-}
-
-.video-embed-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
 /* Form Styles for Join Us Page */
 .form-container {
   max-width: 800px;
